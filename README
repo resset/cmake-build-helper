@@ -1,2 +1,22 @@
 cbuild.sh looks for CMakeLists.txt and executes cmake. Works in build/
 directory as well, but it is recommended to run it in a main directory.
+
+Example:
+
+$ ls
+CmakeLists.txt test.c
+$ cbuild.sh
+cbuild.sh: There is a CMakeLists.txt of the project present.
+(...)
+[100%] Built target test
+$
+
+$ cd build/
+$ cbuild.sh
+cbuild.sh: We are in the build directory, going up.
+cbuild.sh: NOTE: you should run this script in the root of the project.
+cbuild.sh: There is a CMakeLists.txt of the project present.
+(...)
+[100%] Built target test
+$ cd .
+$
