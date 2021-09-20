@@ -12,16 +12,16 @@ build () {
 }
 
 if [ "${dirname}" == "build" ]; then
-    echo "${0}: We are in a build directory, going up."
-    echo "${0}: NOTE: you should run this script in main project directory."
+    echo "${0}: We are in the build directory, going up."
+    echo "${0}: NOTE: you should run this script in the root of the project."
     cd ..
 fi
 
 
 if [ -f CMakeLists.txt ]; then
-    echo "${0}: There is a CMakeLists.txt of a project present."
+    echo "${0}: There is a CMakeLists.txt of the project present."
     echo ""
     build
 else
-    echo "${0}: Not in a CMake project"
+    echo "${0}: Not in a CMake project."
 fi
