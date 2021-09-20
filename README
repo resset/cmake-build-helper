@@ -1,0 +1,2 @@
+cbuild.sh looks for CMakeLists.txt and executes cmake. Works in build/
+directory as well, but it is recommended to run it in a main directory.
